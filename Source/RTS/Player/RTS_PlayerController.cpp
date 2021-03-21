@@ -14,4 +14,7 @@ void ARTS_PlayerController::OnPossess(APawn* aPawn)
 	Super::OnPossess(aPawn);
 
 	bShowMouseCursor = true;
+
+	int32 Square = FMath::Pow(2,24);
+	UE_LOG(LogTemp, Log, TEXT("Square : %i"), Square);
 }
